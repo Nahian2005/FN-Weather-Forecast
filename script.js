@@ -34,7 +34,7 @@ const buttoncall= async (city)=>{
 
     switch(weather_data.weather[0].main){
 
-        case "Clouds":
+        case "Clouds", "Drizzle:
           img.src="cloud.png"
           break;
     
