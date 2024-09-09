@@ -1,0 +1,150 @@
+body{
+
+background-color: lightblue;
+margin: 0;
+justify-content: center;
+display: block;
+align-items: center;
+padding: 0;
+}
+
+.lasth1{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.4rem;
+    color: #040720;
+}
+
+.h1{
+
+    background-color: #98AFC7;
+    display: flex;
+    justify-content: center;
+    border-radius: 3rem;
+    border-style: solid;
+    border-color: #95B9C7;
+
+
+}
+
+.dbtn{
+
+    background-color: #87AFC7 ;
+    max-width: 30%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+   margin-top: 8rem;
+   padding: 10px;
+   border-radius: 20px;
+}
+@media screen and (max-width: 767px) { 
+    .dbtn { 
+      display: flex; 
+      max-width: 70%; 
+      /*margin-bottom: 10px; */
+    }
+}
+#in{
+
+    border-radius: 20px;
+    text-transform: capitalize;
+    padding: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #C6DEFF;
+    border-style: solid;
+    border-color: #3C565B;
+
+}
+::placeholder{
+
+    color: #045D5D ;
+    
+}
+
+.weatherbody{
+
+    
+    max-width: 40%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+   margin: auto;
+    padding: 4rem;
+    margin-top: 26px;
+}
+
+#img{
+
+    height: 200px;
+    width: 200px;
+    margin-top: -55px;
+    
+}
+
+#h1{
+
+    text-align: center;
+    margin-top: -9px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: #36454F;
+}
+
+
+#h3{
+
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #646D7E;
+    font-size: 2.7rem;
+
+}
+
+#h4{
+
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 2rem;
+}
+i{
+
+    font-size: 2rem;
+    margin: 0;
+}
+#h5{
+
+    text-align: center;
+    font-size: 2rem;
+   
+}
+#h6{
+
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+#h7{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#btn{
+
+    
+    padding: 18px;
+    background-color:#87AFC7 ;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #3C565B;
+    margin-left: 2rem;
+    cursor: pointer;
+
+}
+#btn:hover{
+
+    background-color: azure
+}
