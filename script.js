@@ -32,7 +32,7 @@ const buttoncall= async (city)=>{
     humidity.innerHTML=`Humidity level: ${weather_data.main.humidity}%`
     windspeed.innerHTML=`Speed of wind: ${weather_data.wind.speed} km/h`
     feelslike.innerHTML=`Feels like: ${Math.round(weather_data.main.feels_like-273.15)}°C` 
-    more.innerHTML=`Showing weather condition of: ${input.value}`
+    more.innerHTML=`current weather condition of: ${input.value}`
 
     switch(weather_data.weather[0].main){
 
@@ -73,6 +73,6 @@ function t(){
 
     const h4=document.getElementById("time")
     const date= new Date()
-    h4.innerHTML=`Showing Bangladesh Standard Time: ${date.toLocaleTimeString()}`
+    h4.innerHTML=`Bangladesh Standard Time: ${date.toLocaleTimeString()}`
 
 }
