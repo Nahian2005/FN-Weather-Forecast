@@ -1,11 +1,11 @@
 const img=document.getElementById("img");
-const temp =document.getElementById("h1")
-const weatherbody= document.getElementById("h3")
-const humidity=document.getElementById("h4")
-const windspeed=document.getElementById("h6")
-const humidity1=document.getElementById("h5")
-const feelslike=document.getElementById("h7")
-const input=document.getElementById("in")
+const temp =document.getElementById("h1");
+const weatherbody= document.getElementById("h3");
+const humidity=document.getElementById("h4");
+const windspeed=document.getElementById("h6");
+const humidity1=document.getElementById("h5");
+const feelslike=document.getElementById("h7");
+const input=document.getElementById("in");
 const button=document.getElementById("btn");
 const more=document.getElementById("h2");
 
