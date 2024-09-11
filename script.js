@@ -7,6 +7,7 @@ const humidity1=document.getElementById("h5")
 const feelslike=document.getElementById("h7")
 const input=document.getElementById("in")
 const button=document.getElementById("btn");
+const more=document.getElementById("h2");
 
 input.addEventListener("keyup" ,e =>{
 
@@ -31,6 +32,7 @@ const buttoncall= async (city)=>{
     humidity.innerHTML=`Humidity: ${weather_data.main.humidity}%`
     windspeed.innerHTML=`Wind Speed: ${weather_data.wind.speed} km/h`
     feelslike.innerHTML=`Feels Like: ${Math.round(weather_data.main.feels_like-273.15)}°C` 
+    more.innerHTML=`Showing Weather Of: ${input.value}`
 
     switch(weather_data.weather[0].main){
 
@@ -65,3 +67,12 @@ button.addEventListener('click',()=>{
 
     buttoncall(input.value);
 } )
+
+setInterval(t,1000)
+function t(){
+
+    const h4=document.getElementById("time")
+    const date= new Date()
+    h4.innerHTML=`Showing Bangladesh Standard Time: ${date.toLocaleTimeString()}`
+
+}
