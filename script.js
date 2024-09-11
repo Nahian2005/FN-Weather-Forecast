@@ -29,10 +29,10 @@ const buttoncall= async (city)=>{
     console.log(weather_data);
     temp.innerHTML=`${Math.round(weather_data.main.temp-273.15)}°C`
     weatherbody.innerHTML=`${weather_data.weather[0].description}`
-    humidity.innerHTML=`Humidity: ${weather_data.main.humidity}%`
-    windspeed.innerHTML=`Wind Speed: ${weather_data.wind.speed} km/h`
-    feelslike.innerHTML=`Feels Like: ${Math.round(weather_data.main.feels_like-273.15)}°C` 
-    more.innerHTML=`Showing Weather Of: ${input.value}`
+    humidity.innerHTML=`Humidity level: ${weather_data.main.humidity}%`
+    windspeed.innerHTML=`Speed of wind: ${weather_data.wind.speed} km/h`
+    feelslike.innerHTML=`Feels like: ${Math.round(weather_data.main.feels_like-273.15)}°C` 
+    more.innerHTML=`Showing weather condition of: ${input.value}`
 
     switch(weather_data.weather[0].main){
 
