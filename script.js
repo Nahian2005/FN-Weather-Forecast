@@ -11,7 +11,7 @@ const more=document.getElementById("h2");
 
 const dhakaweather= async ()=>{
 
-const url2= `http://api.weatherapi.com/v1/current.json?key=83217e8a1a6a447697071440240809&q=Dhaka&aqi=no`
+const url2= `https://api.weatherapi.com/v1/current.json?key=83217e8a1a6a447697071440240809&q=Dhaka&aqi=no`
 const weather2= await fetch(`${url2}`)
 .then(res=>res.json())
 //console.log(weather2)
