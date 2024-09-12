@@ -14,8 +14,6 @@ const dhakaweather= async ()=>{
 const url2= `http://api.weatherapi.com/v1/current.json?key=83217e8a1a6a447697071440240809&q=Dhaka&aqi=no`
 const weather2= await fetch(`${url2}`)
 .then(res=>res.json())
-
-
 //console.log(weather2)
 temp.innerHTML=`${Math.round(weather2.current.temp_c)}°C`,
 weatherbody.innerHTML=`${weather2.current.condition.text}`
@@ -23,11 +21,8 @@ feelslike.innerHTML=`Feels like: ${Math.round(weather2.current.feelslike_c)}°C`
 humidity.innerHTML=`Humidity percentage: ${weather2.current.humidity}%`
 windspeed.innerHTML=`Speed of wind: ${weather2.current.wind_kph} km/h`
 more.innerHTML=`Current weather of ${weather2.location.name}`
-
 }
 dhakaweather()
-
-
 
 input.addEventListener("keyup" ,e =>{
 
@@ -87,7 +82,6 @@ button.addEventListener('click',()=>{
 
 setInterval(t,1000)
 function t(){
-
     const h4=document.getElementById("time")
     const date= new Date()
     h4.innerHTML=`Bangladesh Standard Time: ${date.toLocaleTimeString()}`
